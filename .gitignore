@@ -164,4 +164,4 @@ cython_debug/
 RoboFlowAPIKey.txt
 
 #ipynb test files
-# demo.ipynb
+demo.ipynb
