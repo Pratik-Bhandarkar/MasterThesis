@@ -39,7 +39,7 @@ if uploaded_file is not None:
         yellow='on', category="Vehicles"), unsafe_allow_html=True)
 
     for i in range(100):
-        t.sleep(0.03)
+        t.sleep(0.05)
 
     # Turn yellow off and show the actual colors by updating the placeholders
     if light_color == 'red':
@@ -51,7 +51,7 @@ if uploaded_file is not None:
 
     if light_color == 'red':
         light_placeholder_people.markdown(w.display_traffic_light_vehicles(
-            red='on', category="Vehicles"), unsafe_allow_html=True)
+            green='on', category="Vehicles"), unsafe_allow_html=True)
     else:
         light_placeholder_people.markdown(w.display_traffic_light_vehicles(
-            green='on', category="Vehicles"), unsafe_allow_html=True)
+            red='on', category="Vehicles"), unsafe_allow_html=True)

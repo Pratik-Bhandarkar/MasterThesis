@@ -19,13 +19,14 @@ def trafficSwitch(prediction):
     if len(counter) != 0:
         for item, count in counter.items():
             if (item == 'ambulance' or item == 'firetruck') and count >= 1:
-                light_color = 'green'
-            elif (item == 'Elderly Person' or item == 'Wheelchair') and count >= 1:
+                light_color = 'red'
+                # print("reeeeeeeeeeeed")
+            elif (item == 'Elderly Person' or item == 'Wheelchair' or item == 'peopleWithWheelchair' or item == 'not wheel chair') and count >= 1:
                 light_color = 'green'
             elif item == 'person' and count >= 2:
                 light_color = 'green'
             else:
-                light_color = 'green'
+                light_color = 'red'
     else:
         light_color = 'green'
 
