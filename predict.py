@@ -8,8 +8,8 @@ with open('RoboFlowAPIKey.txt', 'r') as f:
 def predict(image_path):
     rf = Roboflow(api_key=key)
     project = rf.workspace().project(
-        "deep-learning-basedintelligent-traffic-controlsystem-for-traffic-lightoptimization-omss5")
-    model = project.version(3).model
+        "traffic-detection-ps27b")
+    model = project.version(1).model
     prediction = model.predict(image_path, confidence=40, overlap=30).json()
     model.predict(image_path, confidence=40, overlap=30).save(
         "savedprediction.jpg")
