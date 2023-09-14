@@ -7,7 +7,7 @@ import predict as p
 import trafficSwitchAlgo as ts
 
 
-st.title('Traffic Light Color Prediction')
+st.title('Traffic Light Optimisation with Deep Learning(YOLOV8)')
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png"])
 
 if uploaded_file is not None:
