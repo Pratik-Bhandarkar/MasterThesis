@@ -23,7 +23,7 @@ def trafficSwitch(prediction):
                 # print("reeeeeeeeeeeed")
             elif (item == 'Elderly Person' or item == 'Wheelchair' or item == 'peopleWithWheelchair' or item == 'not wheel chair') and count >= 1:
                 light_color = 'green'
-            elif item == 'person' and count >= 2:
+            elif (item == 'person' or item == 'people ') and count >= 2:
                 light_color = 'green'
             else:
                 light_color = 'red'
